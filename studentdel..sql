@@ -10,5 +10,5 @@ values
 select * from student;
 
 delete from student 
-where id in (select id from student
-where gpa =3.45 and firstname = 'noah2') ;
+where id in( select * from ((select id from student
+where gpa =3.45 and firstname = 'noah2')) ;
