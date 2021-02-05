@@ -13,8 +13,8 @@ insert user
     
     -- inserts 2 vehicles into table and assigns one user to a vehicle
     
-    select *
+    select v.*, u.name
     from vehicle v
-    left join user u on v.ownerid=u.id
+    left join user u on v.ownerid=u.id;
     
     -- displays both tables with a left join to show unowned vehicle
